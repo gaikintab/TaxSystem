@@ -55,10 +55,10 @@ public class Main {
     private static void addData(String name, String usage, int price, Company company){
         switch (usage){
             case "Продажа":
-                deal = new Sale(name, price, 0);
+                deal = new Sale(name, price);
                 break;
             case "Покупка":
-                deal = new Expenditure(name, 0, price);
+                deal = new Expenditure(name, price);
         }
         company.addDeal(deal);
         System.out.println(deal.comment);
