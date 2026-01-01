@@ -43,13 +43,15 @@ public class Main {
         addData("Уголки", "Покупка", 350, company);
         addData("Стяжки", "Покупка", 200, company);
 
-        System.out.println("Прибыль до уплаты налогов: " + company.applyDeals(company.deals));
+        int profit = company.applyDeals(company.deals);
+        System.out.println("Прибыль до уплаты налогов: " + profit);
         System.out.println();
 
 
         tax = new Usn15();                                  // УСН 15%
         company.setTaxSystem(tax);
-        System.out.println("Прибыль до уплаты налогов: " + company.applyDeals(company.deals));
+        profit = company.applyDeals(company.deals);
+        System.out.println("Прибыль до уплаты налогов: " + profit);
     }
 
     private static void addData(String name, String usage, int price, Company company){
