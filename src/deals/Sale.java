@@ -2,8 +2,8 @@ package deals;
 
 public class Sale extends Deal {
 
-    public Sale(String name, int changeDebit) {
-        super("Продажа " + name + " на " + changeDebit + " руб.", changeDebit, 0);
+    public Sale(String name, int price) {
+        super("Продажа " + name + " на " + price + " руб.", price, 0);
 
     }
 }

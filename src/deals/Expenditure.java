@@ -2,7 +2,7 @@ package deals;
 
 public class Expenditure extends Deal{
 
-    public Expenditure(String name, int changeCredit) {
-        super("Покупка " + name + " на " + changeCredit + " руб.", 0, changeCredit);
+    public Expenditure(String name, int price) {
+        super("Покупка " + name + " на " + price + " руб.", 0, price);
     }
 }
